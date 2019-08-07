@@ -1,0 +1,39 @@
+{
+    "name": "Smile Redirector",
+    "version": "1.0",
+    "description": "Redirects amazon to smile.amazon",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.amazon.com/*",
+                "https://www.amazon.co.uk/*",
+                "https://www.amazon.fr/*",
+                "https://www.amazon.de/*",
+                "https://www.amazon.es/*",
+                "https://www.amazon.it/*",
+                "https://www.amazon.nl/*",
+                "https://www.amazon.ca/*",
+                "https://www.amazon.com.mx/*",
+                "https://www.amazon.com.au/*",
+                "https://www.amazon.com.br/*",
+                "https://www.amazon.cn/*",
+                "https://www.amazon.in/*",
+                "https://www.amazon.co.jp/*",
+                "https://www.amazon.com.sg/*",
+                "https://www.amazon.com.tr/*",
+                "https://www.amazon.ae/*"
+            ],
+            "run_at": "document_start",
+            "js": [
+                "amazon.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "images/smile-redirector-16.png",
+        "32": "images/smile-redirector-32.png",
+        "48": "images/smile-redirector-48.png",
+        "128": "images/smile-redirector-128.png"
+    },
+    "manifest_version": 2
+}
